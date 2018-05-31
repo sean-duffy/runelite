@@ -50,8 +50,8 @@ public class KingdomCounter extends Counter
 	public String getTooltip()
 	{
 		int topUpAmount = maxCoffer - plugin.getCoffer();
-		return String.format("Favor: " + plugin.getFavor() + "/127" + "</br>"
-			+ "Coffer: " + StackFormatter.quantityToRSStackSize(plugin.getCoffer()) + "</br>"
-				+ "Top-Up: " + topUpAmount);
+		return String.format("<col=ffff00>Approval:</col> " + plugin.getFavor() + "/127" + "</br>"
+				+ "<col=ffff00>Coffer</col>: " + StackFormatter.quantityToRSStackSize(plugin.getCoffer()) + "</br>"
+				+ "<col=ffff00>Deposit Amount:</col> " + topUpAmount);
 	}
 }
