@@ -51,7 +51,7 @@ public class KingdomCounter extends Counter
 	{
 		int topUpAmount = maxCoffer - plugin.getCoffer();
 		return String.format("<col=ffff00>Approval:</col> " + plugin.getFavor() + "/127" + "</br>"
-				+ "<col=ffff00>Coffer</col>: " + StackFormatter.quantityToRSStackSize(plugin.getCoffer()) + "</br>"
+				+ "<col=ffff00>Coffer</col>: " + QuantityFormatter.quantityToRSDecimalStack(plugin.getCoffer()) + "</br>"
 				+ "<col=ffff00>Deposit Amount:</col> " + topUpAmount);
 	}
 }
